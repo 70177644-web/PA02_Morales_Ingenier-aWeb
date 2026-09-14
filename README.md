@@ -22,3 +22,4 @@ El objetivo es gestionar y visualizar información relacionada con motores eléc
 ```bash
 git clone https://github.com/usuario/ElectromotorWeb.git
 cd ElectromotorWeb
+Usa programas como DB Browser for SQLite, SQLiteStudio o incluso extensiones de VS Code para visualiza el contenido de la base de datos en electromotor.db.
