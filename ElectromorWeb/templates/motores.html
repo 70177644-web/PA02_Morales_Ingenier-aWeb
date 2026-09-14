@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Motores</title>
+</head>
+<body>
+    <h2>Registro de Motores</h2>
+    <form method="POST">
+        <input type="text" name="marca" placeholder="Marca" required>
+        <input type="text" name="modelo" placeholder="Modelo">
+        <input type="text" name="potencia" placeholder="Potencia">
+        <input type="text" name="tipo" placeholder="Tipo">
+        <input type="text" name="serie" placeholder="Número de serie">
+        <select name="cliente_id">
+            {% for c in clientes %}
+                <option value="{{ c.id }}">{{ c.nombre }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Registrar</button>
+    </form>
+    <h3>Lista de Motores</h3>
+    <ul>
+        {% for m in motores %}
+            <li>{{ m.marca }} - {{ m.modelo }} - Cliente: {{ m.cliente.nombre }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

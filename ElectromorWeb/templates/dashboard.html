@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h2>Panel de Control</h2>
+
+<div class="cards">
+    <div class="card">
+        <h3>Clientes</h3>
+        <p>Total: {{ clientes|length }}</p>
+    </div>
+    <div class="card">
+        <h3>Motores</h3>
+        <p>Total: {{ motores|length }}</p>
+    </div>
+    <div class="card">
+        <h3>Órdenes</h3>
+        <p>Total: {{ ordenes|length }}</p>
+    </div>
+    <div class="card">
+        <h3>Diagnósticos</h3>
+        <p>Total: {{ diagnosticos|length }}</p>
+    </div>
+    <div class="card">
+        <h3>Reportes</h3>
+        <p>Total: {{ reportes|length }}</p>
+    </div>
+</div>
+
+{% endblock %}

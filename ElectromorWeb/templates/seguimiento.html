@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seguimiento del Servicio</title>
+</head>
+<body>
+    <h2>Seguimiento</h2>
+    <ul>
+        {% for o in ordenes %}
+            <li>Orden {{ o.id }} - Motor {{ o.motor.marca }} → Estado: {{ o.estado }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

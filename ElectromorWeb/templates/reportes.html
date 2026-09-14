@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reportes</title>
+</head>
+<body>
+    <h2>Reportes</h2>
+    <form method="POST">
+        <textarea name="contenido" placeholder="Contenido del reporte"></textarea>
+        <button type="submit">Generar Reporte</button>
+    </form>
+    <h3>Reportes generados</h3>
+    <ul>
+        {% for r in reportes %}
+            <li>{{ r.contenido }} - Fecha: {{ r.fecha }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

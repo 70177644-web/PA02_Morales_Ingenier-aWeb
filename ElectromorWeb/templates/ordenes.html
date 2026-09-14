@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Órdenes de Trabajo</title>
+</head>
+<body>
+    <h2>Órdenes de Trabajo</h2>
+    <form method="POST">
+        <textarea name="problema" placeholder="Problema reportado"></textarea>
+        <input type="text" name="responsable" placeholder="Responsable">
+        <select name="motor_id">
+            {% for m in motores %}
+                <option value="{{ m.id }}">{{ m.marca }} - {{ m.modelo }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Crear Orden</button>
+    </form>
+    <h3>Órdenes registradas</h3>
+    <ul>
+        {% for o in ordenes %}
+            <li>{{ o.problema }} - Motor: {{ o.motor.marca }} - Responsable: {{ o.responsable }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
