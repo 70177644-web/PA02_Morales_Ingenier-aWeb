@@ -4,7 +4,7 @@
 ## Descripción
 Electromotor Web es un sistema desarrollado en **Python (Flask)** con base de datos **SQLite**, diseñado como parte del proyecto académico **PA02 de Ingeniería Web**.  
 El objetivo es gestionar y visualizar información relacionada con motores eléctricos mediante una interfaz web sencilla y funcional.
-
+Usa programas como DB Browser for SQLite, SQLiteStudio o incluso extensiones de VS Code para visualizar el contenido de la base de datos en electromotor.db.
 ---
  
 ## Tecnologías utilizadas
@@ -22,4 +22,4 @@ El objetivo es gestionar y visualizar información relacionada con motores eléc
 ```bash
 git clone https://github.com/usuario/ElectromotorWeb.git
 cd ElectromotorWeb
-Usa programas como DB Browser for SQLite, SQLiteStudio o incluso extensiones de VS Code para visualiza el contenido de la base de datos en electromotor.db.
+
